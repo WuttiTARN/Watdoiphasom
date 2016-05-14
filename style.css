@@ -21,7 +21,7 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 
 /* Globals type styling */
  h1, h2, h3, h4, h5, h6, p, label, .btn, a{
-	font-family:Droid Sans;
+	font-family:Droid Serif;
 }
 
 
@@ -55,8 +55,8 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 
 /* Sizes */
 
-.bloc-xl{
-	padding:150px 50px;
+.bloc-xxl{
+	padding:200px 50px;
 }
 .bloc-lg{
 	padding:100px 50px;
@@ -201,6 +201,12 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 
 /* Bloc text custom styling */
 
+#bloc-1 h2{
+	font-size: 40px;
+}
+#bloc-2 h3{
+	line-height:50px;
+}
 #bloc-4 h3{
 	font-size: 20px;
 }
@@ -315,6 +321,10 @@ nav .caret{
 .mg-clear{
 	margin:0;
 }
+.mg-sm{
+	margin-top:10px;
+	margin-bottom:5px;
+}
 .mg-md{
 	margin-top:10px;
 	margin-bottom:20px;
@@ -342,12 +352,30 @@ button{
 .btn-sq{
 	border-radius: 0px;
 }
+.btn-rd{
+	border-radius: 40px;
+}
+.btn-xl{
+	padding: 16px 40px;
+	font-size: 28px;
+}
+.a-btn{
+	padding: 6px 10px 6px 0;
+	line-height: 1.42857143;
+	display:inline-block;
+}
+.text-center .a-btn{
+	padding: 6px 0;
+}
 .dropdown a .caret{
 	margin:0 0 0 5px}
 /* = Icons
 -------------------------------------------------------------- */
 .icon-md{
 	font-size:30px!important;
+}
+.icon-lg{
+	font-size:60px!important;
 }
 .icon-round{
 	margin:0 auto;
@@ -367,6 +395,11 @@ button{
 }
 
 
+/* = Text & Icon Styles
+-------------------------------------------------------------- */
+.pressed-t{
+	text-shadow:0 1px 0 #FFF;
+}
 
 
 /* = Panels
@@ -467,6 +500,21 @@ iframe{
 .bgc-moonstone-blue{
 	background-color:#63B5B1;
 }
+/* Text colour styles */
+
+.tc-dark-lava{
+	color:#403B3E!important;
+}
+/* Button colour styles */
+
+.btn-moonstone-blue{
+	background:#63B5B1;
+	color:#FFFFFF!important;
+}
+.btn-moonstone-blue:hover{
+	background:#4f918e;
+	color:#FFFFFF!important;
+}
 /* Link colour styles */
 
 .ltc-dark-lava{
@@ -474,6 +522,18 @@ iframe{
 }
 .ltc-dark-lava:hover{
 	color:#332f32!important;
+}
+.ltc-moonstone-blue{
+	color:#63B5B1!important;
+}
+.ltc-moonstone-blue:hover{
+	color:#4f918e!important;
+}
+/* Icon colour styles */
+
+.icon-moonstone-blue{
+	color:#63B5B1!important;
+	border-color:#63B5B1!important;
 }
 
 /* Bloc image backgrounds */
@@ -497,10 +557,13 @@ iframe{
 	background-image:url("img/header.jpg?timestamp=1463214625254");
 }
 .bg-header2{
-	background-image:url('img/header2.jpg');
+	background-image:url("img/header2.jpg");
 }
 .bg-Untitled-1fff{
-	background-image:url('img/Untitled-1fff.jpg');
+	background-image:url("img/Untitled-1fff.jpg");
+}
+.bg-Untitled-1test{
+	background-image:url("img/Untitled-1test.jpg?timestamp=1463230139282");
 }
 
 
