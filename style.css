@@ -55,6 +55,9 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 
 /* Sizes */
 
+.bloc-xl{
+	padding:150px 50px;
+}
 .bloc-lg{
 	padding:100px 50px;
 }
@@ -455,8 +458,14 @@ iframe{
 .bgc-dark-lava{
 	background-color:#403B3E;
 }
+.bgc-white-smoke{
+	background-color:#F9F8F3;
+}
 .bgc-white{
 	background-color:#ffffff;
+}
+.bgc-moonstone-blue{
+	background-color:#63B5B1;
 }
 /* Link colour styles */
 
