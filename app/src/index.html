@@ -33,9 +33,43 @@
 
   </head>
   <body>
-    <!--[if lt IE 10]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+
+    <!-- Navigation Bloc -->
+    <div class="bloc bgc-dark-lava bg-header2 d-bloc" id="nav-bloc">
+      <div class="container bloc-sm b-divider-dashed">
+        <nav class="navbar row">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html"><img src="app/main/pro/img/LogoWat.png" /></a>
+            <button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+              <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse navbar-1">
+            <ul class="site-navigation nav navbar-nav">
+              <li>
+                <a class="ltc-dark-lava" href="#/">Main</a>
+              </li>
+              <li>
+                <a class="ltc-dark-lava" href="#/product">Product</a>
+              </li>
+              <li>
+                <a class="ltc-dark-lava" href="#/shop">Shopping</a>
+              </li>
+              <li>
+                <a class="ltc-dark-lava" href="#/event">Event</a>
+              </li>
+              <li>
+                <a class="ltc-dark-lava" href="#/profile">My Profile</a>
+              </li>
+              <li>
+                <a class="ltc-dark-lava" href="#/register">Register</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- Navigation Bloc END -->
 
     <div ng-view></div>
 
