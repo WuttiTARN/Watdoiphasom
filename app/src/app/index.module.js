@@ -2,6 +2,10 @@
   'use strict';
 
   angular
-    .module('app', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ngResource', 'ngRoute', 'ui.bootstrap', 'toastr']);
+    .module('app', ['ngRoute',
+      'ngResource',
+      'pascalprecht.translate',
+      'flow',
+      'ngResource+apiPrefix','cgBusy','ngCookies']);
 
 })();
