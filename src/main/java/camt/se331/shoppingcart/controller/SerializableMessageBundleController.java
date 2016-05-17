@@ -10,9 +10,9 @@ import java.util.Locale;
 import java.util.Properties;
 
 
+@CrossOrigin
 @Controller
 @RequestMapping("/messageBundle")
-@CrossOrigin
 public class SerializableMessageBundleController {
     @Autowired
     SerializableResourceBundleMessageSource messageBundle;

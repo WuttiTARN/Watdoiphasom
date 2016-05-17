@@ -31,10 +31,30 @@
   <script src="app/main/pro/js/bootstrap.min.js"></script>
   <script src="app/main/pro/js/blocs.min.js"></script><link rel='stylesheet' href='app/main/pro/css/linecons.min.css'/><link rel='stylesheet' href='app/main/pro/css/font-awesome.min.css'/><link href='http://fonts.googleapis.com/css?family=Droid+Serif&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
+  <script src="bower_components/angular-translate/angular-translate.js"></script>
+  <script src="bower_components/angular-translate-loader-url/angular-translate-loader-url.js"></script>
+  <script src="app/language/languageServices.js"></script>
+  <script src="app/language/language.Controller.js"></script>
+  <script src="app/shoppingcart/shoppingCartController.js"></script>
+  <script src="app/shoppingcart/shoppingCartService.js"></script>
+
 </head>
 <body>
 
 <div class="bloc bgc-dark-lava bg-header2 d-bloc" id="nav-bloc" >
+
+  <div class="navbar navbar-default" ng-controller="LanguageController">
+
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse">
+        <div ng-include src ="'app/security/login.html'"></div>
+      </div>
+    </div>
+  </div>
+  <div class="container ng-hide" ng-show = "initialized">
+    <div class="alert alert-dangeer" ng-show="error">{{error}}</div>
+  </div>
+
   <div class="container bloc-sm b-divider-dashed">
     <nav class="navbar row">
       <div class="navbar-header">
@@ -64,11 +84,20 @@
           <li>
             <a class="ltc-dark-lava" href="#/register">Register</a>
           </li>
-            <li ng-class="{'active':currentLocale== 'en'}"><a href="" ng-click="changeLanguage('en')">EN </a></li>
-            <li ng-class="{'active':currentLocale== 'fr'}"><a href="" ng-click="changeLanguage('fr')">FR</a></li>
         </ul>
       </div>
     </nav>
+  </div>
+</div>
+
+<div class="navbar navbar-default" ng-controller="LanguageController">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li ng-class="{'active':currentLocale== 'en'}"><a href="" ng-click="changeLanguage('en')">EN </a></li>
+        <li ng-class="{'active':currentLocale== 'th'}"><a href="" ng-click="changeLanguage('th')">TH</a></li>
+      </ul>
+    </div>
   </div>
 </div>
 
@@ -80,25 +109,14 @@
   column
          <div ng-include src="'app/component/leftnav.html'"></div>
        </div> -->
-    <div class="col-md-12">
-      <div class="navbar navbar-default" ng-controller="LanguageController">
-        <div class="container-fluid">
-          <div class="collapse navbar-collapse">
-            <div ng-include src ="'app/security/login.html'"></div>
-          </div>
-        </div>
-      </div>
-      <div class="container ng-hide" ng-show = "initialized">
-        <div class="alert alert-dangeer" ng-show="error">{{error}}</div>
-      </div>
       <!-- Breadcrumbs
      ================================================== -->
 
 
       <ng-view>Loading...</ng-view>
 
-    </div>
-  </div>
+
+ </div>
 </div>
 
 

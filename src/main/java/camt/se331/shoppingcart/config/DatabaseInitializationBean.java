@@ -66,16 +66,16 @@ public class DatabaseInitializationBean implements InitializingBean {
 
 
         Product[] initProduct =  {
-                new Product(1l,"Kindle","the good book reader",6900.00, ImageUtil.resizeImage(ImageUtil.getImage("pic/x.png"),200)),
-                new Product(2l,"Surface Pro","The unknow computer",34000.00,ImageUtil.resizeImage(ImageUtil.getImage("pic/x.png"),200)),
-                new Product(3l,"Mac pro"," Mac book interim",44000.00,ImageUtil.resizeImage(ImageUtil.getImage("pic/x.png"),200)),
-                new Product(4l,"Candle","use for lightenup the world",10.00,ImageUtil.resizeImage(ImageUtil.getImage("pic/x.png"),200)),
-                new Product(5l,"Bin","User for what ?",200.00,ImageUtil.resizeImage(ImageUtil.getImage("pic/x.png"),200)),
-                new Product(6l,"Telephone", "Call the others",150.00,ImageUtil.resizeImage(ImageUtil.getImage("pic/x.png"),200)),
-                new Product(7l,"iPhone","What is it?",26000.00,ImageUtil.resizeImage(ImageUtil.getImage("pic/x.png"),200)),
-                new Product(8l,"Galaxy Note 4","Who still use this ?",24000.00,ImageUtil.resizeImage(ImageUtil.getImage("pic/x.png"),200)),
-                new Product(9l,"AngularJS","we hate it",2000.00,ImageUtil.resizeImage(ImageUtil.getImage("pic/x.png"),200)),
-                new Product(10l,"Mazda 3","Very handsome guy use this",300000.00,ImageUtil.resizeImage(ImageUtil.getImage("pic/x.png"),200))
+                new Product(1l,"Kindle","the good book reader",6900.00, ImageUtil.resizeImage(ImageUtil.getImage("pic/1.jpg"),200)),
+                new Product(2l,"Surface Pro","The unknow computer",34000.00,ImageUtil.resizeImage(ImageUtil.getImage("pic/2.jpg"),200)),
+                new Product(3l,"Mac pro"," Mac book interim",44000.00,ImageUtil.resizeImage(ImageUtil.getImage("pic/3.jpg"),200)),
+                new Product(4l,"Candle","use for lightenup the world",10.00,ImageUtil.resizeImage(ImageUtil.getImage("pic/4.jpg"),200)),
+                new Product(5l,"Bin","User for what ?",200.00,ImageUtil.resizeImage(ImageUtil.getImage("pic/5.jpg"),200)),
+                new Product(6l,"Telephone", "Call the others",150.00,ImageUtil.resizeImage(ImageUtil.getImage("pic/6.jpg"),200)),
+                new Product(7l,"iPhone","What is it?",26000.00,ImageUtil.resizeImage(ImageUtil.getImage("pic/7.jpg"),200)),
+                new Product(8l,"Galaxy Note 4","Who still use this ?",24000.00,ImageUtil.resizeImage(ImageUtil.getImage("pic/8.jpg"),200)),
+                new Product(9l,"AngularJS","we hate it",2000.00,ImageUtil.resizeImage(ImageUtil.getImage("pic/9.jpg"),200)),
+                new Product(10l,"Mazda 3","Very handsome guy use this",300000.00,ImageUtil.resizeImage(ImageUtil.getImage("pic/10.jpg"),200))
         };
         productRepository.save(Arrays.asList(initProduct));
 

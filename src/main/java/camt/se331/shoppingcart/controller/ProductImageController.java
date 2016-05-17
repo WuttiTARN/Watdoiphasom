@@ -48,4 +48,11 @@ public class ProductImageController {
 
         return product;
     }
+    @RequestMapping(value = "/remove", method = RequestMethod.DELETE)
+    @ResponseBody
+    public Product edit(@RequestParam("productid") Long productId,
+                        @RequestParam("imageid") Long imageid){
+        Product product = productService.getProduct(productId);
+        return productService.deleteImage(product,imageid);
+    }
 }
