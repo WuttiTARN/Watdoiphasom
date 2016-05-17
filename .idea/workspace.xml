@@ -1,53 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d36ee7d4-ba36-4491-9204-39e716880871" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/app/main/main.controller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/app/main/main.controller.spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/pic/x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/message_fr.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/message_fr.properties" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/app/product/product.html" afterPath="$PROJECT_DIR$/app/src/app/product/productList.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/message_fr.properties" afterPath="$PROJECT_DIR$/src/main/resources/message_th.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/config/DatabaseInitializationBean.class" afterPath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/config/DatabaseInitializationBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/controller/ProductImageController.class" afterPath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/controller/ProductImageController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/controller/SerializableMessageBundleController.class" afterPath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/controller/SerializableMessageBundleController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/dao/DbProductDao.class" afterPath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/dao/DbProductDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/service/ImageUtil.class" afterPath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/service/ImageUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/service/ProductService.class" afterPath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/service/ProductService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/service/ProductServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/service/ProductServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/config/DatabaseInitializationBean.class" afterPath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/config/DatabaseInitializationBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/controller/ProductImageController.class" afterPath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/controller/ProductImageController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/controller/SerializableMessageBundleController.class" afterPath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/controller/SerializableMessageBundleController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/dao/DbProductDao.class" afterPath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/dao/DbProductDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/service/ImageUtil.class" afterPath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/service/ImageUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/service/ProductService.class" afterPath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/service/ProductService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/service/ProductServiceImpl.class" afterPath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/service/ProductServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/app/component/leftnav.html" afterPath="$PROJECT_DIR$/app/src/app/component/leftnav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/app/index.route.js" afterPath="$PROJECT_DIR$/app/src/app/index.route.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/app/index.scss" afterPath="$PROJECT_DIR$/app/src/app/index.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/app/language/languageServices.js" afterPath="$PROJECT_DIR$/app/src/app/language/languageServices.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/app/main/main.html" afterPath="$PROJECT_DIR$/app/src/app/main/main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/app/main/pro/style.css" afterPath="$PROJECT_DIR$/app/src/app/main/pro/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/app/product/editProduct.html" afterPath="$PROJECT_DIR$/app/src/app/product/editProduct.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/app/product/product.Controller.js" afterPath="$PROJECT_DIR$/app/src/app/product/product.Controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/app/product/productService.js" afterPath="$PROJECT_DIR$/app/src/app/product/productService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/app/security/login.html" afterPath="$PROJECT_DIR$/app/src/app/security/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/app/shoppingcart/shoppingCartService.js" afterPath="$PROJECT_DIR$/app/src/app/shoppingcart/shoppingCartService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/index.html" afterPath="$PROJECT_DIR$/app/src/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/DatabaseInitializationBean.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/DatabaseInitializationBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/controller/ProductController.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/controller/ProductController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/controller/ProductImageController.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/controller/ProductImageController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/controller/SerializableMessageBundleController.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/controller/SerializableMessageBundleController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/dao/DbProductDao.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/dao/DbProductDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/service/ImageUtil.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/service/ImageUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/service/ProductService.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/service/ProductService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/service/ProductServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/service/ProductServiceImpl.java" />
-    </list>
+    <list default="true" id="d36ee7d4-ba36-4491-9204-39e716880871" name="Default" comment="" />
     <ignored path="lab10.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -678,12 +632,12 @@
       <created>1463440065207</created>
       <option name="number" value="Default" />
       <updated>1463440065207</updated>
-      <workItem from="1463440068155" duration="13572000" />
+      <workItem from="1463440068155" duration="13731000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13572000" />
+    <option name="totallyTimeSpent" value="13731000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
