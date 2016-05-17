@@ -1,106 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0bfc4698-00de-4911-9626-6367b7f32648" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/app/main/main.controller.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/app/main/main.controller.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/config/DatabaseInitializationBean.class" afterPath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/config/DatabaseInitializationBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/config/PersistenceContext.class" afterPath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/config/PersistenceContext.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/config/SecurityConfig.class" afterPath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/config/SecurityConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/config/WebAppInitializer.class" afterPath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/config/WebAppInitializer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/config/security/AuthenticationTokenProcessingFilter.class" afterPath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/config/security/AuthenticationTokenProcessingFilter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/config/security/CustomUserDetailsService.class" afterPath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/config/security/CustomUserDetailsService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/config/security/RestAuthenticationEntryPoint.class" afterPath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/config/security/RestAuthenticationEntryPoint.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/config/security/SecurityUser.class" afterPath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/config/security/SecurityUser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/controller/ProductController.class" afterPath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/controller/ProductController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/controller/ProductImageController.class" afterPath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/controller/ProductImageController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/controller/SerializableMessageBundleController.class" afterPath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/controller/SerializableMessageBundleController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/dao/DbProductDao.class" afterPath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/dao/DbProductDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/entity/Image.class" afterPath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/entity/Image.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/entity/Product.class" afterPath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/entity/Product.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/entity/Role.class" afterPath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/entity/Role.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/entity/SelectedProduct.class" afterPath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/entity/SelectedProduct.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/entity/ShoppingCart.class" afterPath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/entity/ShoppingCart.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/entity/User.class" afterPath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/entity/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/entity/transfer/TokenTransfer.class" afterPath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/entity/transfer/TokenTransfer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/entity/transfer/UserTransfer.class" afterPath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/entity/transfer/UserTransfer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/service/ImageUtil.class" afterPath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/service/ImageUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/service/ProductService.class" afterPath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/service/ProductService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/service/ProductServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/service/ProductServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/service/UserServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/service/UserServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/service/util/TokenUtils.class" afterPath="$PROJECT_DIR$/target/classes/camt/se331/shoppingcart/service/util/TokenUtils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/config/DatabaseInitializationBean.class" afterPath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/config/DatabaseInitializationBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/config/PersistenceContext.class" afterPath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/config/PersistenceContext.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/config/SecurityConfig.class" afterPath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/config/SecurityConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/config/WebAppInitializer.class" afterPath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/config/WebAppInitializer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/config/security/AuthenticationTokenProcessingFilter.class" afterPath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/config/security/AuthenticationTokenProcessingFilter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/config/security/CustomUserDetailsService.class" afterPath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/config/security/CustomUserDetailsService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/config/security/RestAuthenticationEntryPoint.class" afterPath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/config/security/RestAuthenticationEntryPoint.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/config/security/SecurityUser.class" afterPath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/config/security/SecurityUser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/controller/ProductController.class" afterPath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/controller/ProductController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/controller/ProductImageController.class" afterPath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/controller/ProductImageController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/controller/SerializableMessageBundleController.class" afterPath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/controller/SerializableMessageBundleController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/dao/DbProductDao.class" afterPath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/dao/DbProductDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/entity/Image.class" afterPath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/entity/Image.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/entity/Product.class" afterPath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/entity/Product.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/entity/Role.class" afterPath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/entity/Role.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/entity/SelectedProduct.class" afterPath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/entity/SelectedProduct.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/entity/ShoppingCart.class" afterPath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/entity/ShoppingCart.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/entity/User.class" afterPath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/entity/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/entity/transfer/TokenTransfer.class" afterPath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/entity/transfer/TokenTransfer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/entity/transfer/UserTransfer.class" afterPath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/entity/transfer/UserTransfer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/service/ImageUtil.class" afterPath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/service/ImageUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/service/ProductService.class" afterPath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/service/ProductService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/service/ProductServiceImpl.class" afterPath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/service/ProductServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/service/UserServiceImpl.class" afterPath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/service/UserServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/service/util/TokenUtils.class" afterPath="$PROJECT_DIR$/target/lab10-1.0-SNAPSHOT/WEB-INF/classes/camt/se331/shoppingcart/service/util/TokenUtils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/app/index.route.js" afterPath="$PROJECT_DIR$/app/src/app/index.route.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/app/main/main.html" afterPath="$PROJECT_DIR$/app/src/app/main/main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/app/product/editProduct.html" afterPath="$PROJECT_DIR$/app/src/app/product/editProduct.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/app/product/product.Controller.js" afterPath="$PROJECT_DIR$/app/src/app/product/product.Controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/app/product/productService.js" afterPath="$PROJECT_DIR$/app/src/app/product/productService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/index.html" afterPath="$PROJECT_DIR$/app/src/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/AppConfig.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/AppConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/DatabaseInitializationBean.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/DatabaseInitializationBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/PersistenceContext.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/PersistenceContext.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/SecurityConfig.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/SecurityConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/WebAppInitializer.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/WebAppInitializer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/security/AuthenticationTokenProcessingFilter.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/security/AuthenticationTokenProcessingFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/security/CustomUserDetailsService.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/security/CustomUserDetailsService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/security/RestAuthenticationEntryPoint.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/security/RestAuthenticationEntryPoint.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/security/SecurityUser.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/config/security/SecurityUser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/controller/ProductController.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/controller/ProductController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/controller/ProductImageController.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/controller/ProductImageController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/controller/SerializableMessageBundleController.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/controller/SerializableMessageBundleController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/controller/ShoppingCartController.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/controller/ShoppingCartController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/dao/DbProductDao.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/dao/DbProductDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/dao/ProductDao.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/dao/ProductDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/dao/ShoppingCartDao.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/dao/ShoppingCartDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/dao/ShoppingCartDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/dao/ShoppingCartDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/entity/Image.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/entity/Image.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/entity/Product.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/entity/Product.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/entity/Role.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/entity/Role.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/entity/SelectedProduct.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/entity/SelectedProduct.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/entity/ShoppingCart.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/entity/ShoppingCart.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/entity/User.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/entity/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/entity/VatEntity.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/entity/VatEntity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/entity/transfer/TokenTransfer.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/entity/transfer/TokenTransfer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/entity/transfer/UserTransfer.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/entity/transfer/UserTransfer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/repository/ProductRepository.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/repository/ProductRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/repository/RoleRepository.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/repository/RoleRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/repository/ShoppingCartRepository.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/repository/ShoppingCartRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/repository/UserRepository.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/repository/UserRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/service/ImageUtil.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/service/ImageUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/service/ProductService.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/service/ProductService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/service/ProductServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/service/ProductServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/service/ShoppingCartService.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/service/ShoppingCartService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/service/ShoppingCartServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/service/ShoppingCartServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/service/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/service/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/service/UserServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/service/util/TokenUtils.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/service/util/TokenUtils.java" />
-    </list>
+    <list default="true" id="0bfc4698-00de-4911-9626-6367b7f32648" name="Default" comment="" />
     <ignored path="lab10.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -238,6 +139,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lab10" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Watdoiphasom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -252,11 +171,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -270,29 +193,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shoppingcart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lab10" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Watdoiphasom" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -300,19 +201,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shoppingcart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
+              <option name="myItemId" value="product" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -326,7 +219,7 @@
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SE331-lab10" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../q1" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files (x86)\nodejs\node.exe" />
   </component>
   <component name="RecentsManager">
@@ -838,12 +731,12 @@
       <created>1463472300347</created>
       <option name="number" value="Default" />
       <updated>1463472300347</updated>
-      <workItem from="1463472313757" duration="2575000" />
+      <workItem from="1463472313757" duration="2934000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2575000" />
+    <option name="totallyTimeSpent" value="2934000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
@@ -861,7 +754,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3666121" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23298033" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20272315" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -917,14 +810,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/app/product/editProduct.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9075472">
-          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1147,6 +1032,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.91099477">
           <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/app/product/editProduct.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.8888888">
+          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
           <folding />
         </state>
       </provider>
