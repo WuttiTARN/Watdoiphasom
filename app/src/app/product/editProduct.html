@@ -3,10 +3,18 @@
         <h1>Add new product</h1>
     </div>
     <div class="row" ng-show="editPerson">
-        <h1>Edit Product</h1>
+    <h1>Edit Product</h1>
+    <div style="position: relative" ng-repeat="image in product.images" class="text-center">
+      <img ng-src="data:{{image.contentType}};base64,{{image.content}}" class="thumbnail"/>
+      <button style="position: absolute; top: 5px; left: 5px; z-index: 999" href="#" ng-click="removeImage(product.id, image.id)">
+        <i class="glyphicon glyphicon-remove-circle"></i>
+      </button>
     </div>
+    </div>
+
     <div class="col-md-4">
         <form name="editform" novalidate flow-init>
+
             <div class="form-group">
                 <!-- Sidebar content-->
                 <label for="productname">name :</label>
@@ -18,6 +26,7 @@
                     Product name is Required!
                 </div>
             </div>
+
             <div class="form-group">
                 <label for="productdescription">Description :</label>
                 <input ng-model="vm.product.description" class="form-control" id="productdescription"
@@ -30,6 +39,7 @@
                 </div>
 
             </div>
+
             <div class="form-group">
                 <label for="productprice">price :</label>
                 <input ng-model="vm.product.totalPrice" name="productprice" class="form-control" id="productprice"
@@ -40,14 +50,8 @@
                     <span class="sr-only">Error:</span>
                     Price is Required!
                 </div>
-                <div class="alert alert-danger" role="alert" ng-show="vm.editform.productprice.$error.number">
-                    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-                    <span class="sr-only">Error:</span>
-                    Enter the number!!
-                </div>
 
-            </div>
-            <div class="form-group">
+               <div>
                 <input type="file" flow-btn/>
                 <table>
                     <tr ng-repeat="file in $flow.files">
@@ -56,10 +60,17 @@
                         <td><img flow-img="$flow.files[{{$index}}]"> </td>
                     </tr>
                 </table>
+              </div>
+
+              <div class="alert alert-danger" role="alert" ng-show="vm.editform.productprice.$error.number">
+                <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                <span class="sr-only">Error:</span>
+                Enter the number!!
+              </div>
             </div>
 
             <button type="submit" class="btn btn-default" ng-click="addProductController.addProduct($flow)" ng-show="addProductController">Add</button>
-            <button type="submit" class="btn btn-default" ng-click="editProductController.editProduct()" ng-show="editProductController">Edit</button>
+            <button type="submit" class="btn btn-default" ng-click="vm.editProduct($flow)" ng-show="vm.editPerson">Edit</button>
         </form>
     </div>
 </div>
