@@ -13,7 +13,7 @@ import java.util.List;
  * Created by Dto on 4/6/2015.
  */
 @Service
-public class ShoppingCartServiceImpl implements ShoppingCartService{
+public class ShoppingCartServiceImpl implements ShoppingCartService {
 
     @Autowired
     ShoppingCartDao shoppingCartDao;

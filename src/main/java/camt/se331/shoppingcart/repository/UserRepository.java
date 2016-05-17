@@ -6,6 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 /**
  * Created by Family on 19/4/2559.
  */
+
 public interface UserRepository extends JpaRepository<User,Long> {
     User findByEmail(String email);
     User findByUsername(String username);

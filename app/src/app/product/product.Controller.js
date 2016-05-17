@@ -14,7 +14,6 @@
     vm.product = {};
     vm.addPerson = true;
     vm.editPerson = false;
-
     vm.addProduct = function (flowFiles) {
       productService.save(vm.product, function (data) {
         // after adding the object, add a new picture
@@ -25,11 +24,11 @@
         flowFiles.opts.testChunks = false;
         flowFiles.opts.query = {productid: productid};
         flowFiles.upload();
-      });
+
         $rootScope.addSuccess = true;
         $location.path("listProduct");
-        vm.$apply();
-    };
+      });
+    }
 
   }
 
@@ -40,7 +39,7 @@
     //$http.get("/product/").success(function (data) {
     vm.queryPromise = productService.query(function (data) {
       // $scope.totalNetPrice= totalCalService.getTotalNetPrice(data);
-     vm.products = data;
+      vm.products = data;
     }).$promise;
 
 
@@ -77,39 +76,35 @@
     var id = $routeParams.id;
     productService.get({id:id},
       // success function
-     function(data){
-       vm.product=data;
-     }
+      function(data){
+        vm.product=data;
+      }
     )
+
 
     vm.editProduct = function (flowFiles) {
       //$http.put("/product", $scope.product).then(function () {
-      var pd = angular.copy(vm.product);
-      productService.update({id:vm.product.id, name:vm.product.name, description:vm.product.description, totalPrice:vm.product.totalPrice},function(data){
-
-        var productid = data.id;
+      productService.update({id: vm.product.id}, vm.product, function () {
+        var productid = vm.product.id;
+        // set location
         flowFiles.opts.target = 'http://localhost:8080/productImage/add';
         flowFiles.opts.testChunks = false;
-        flowFiles.opts.query ={productid:productid};
+        flowFiles.opts.query = {productid: productid};
         flowFiles.upload();
         $rootScope.editSuccess = true;
         $location.path("listProduct");
-        vm.$apply();
-
       });
     }
 
-    vm.deleteImage = function (pId, imgId){
-      var ans = confirm("Do you want to delete the image?");
-      if(ans == true){
-        $http.delete("http://localhost:8080/productImage/remove?productid="+pId+"&imageid="+imgId).then(function (){
-          $http.get("http://localhost:8080/product"+pId).success(function (data){
-            vm.product = data;
-          });
-        }, function(){
-          console.log("FAILED")
+    vm.deleteImage = function (id) {
+      var answer = confirm("Do you want to delete the image?");
+      if (answer) {
+        $http.delete("http://localhost:8080/productImage/remove?imageid=" + id + "&productid=" + vm.product.id).success(function (data) {
+          vm.product = data;
         });
       }
     }
 
-  }})();
+
+  }
+})();

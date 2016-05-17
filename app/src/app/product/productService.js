@@ -1,5 +1,5 @@
 (function() {
-'use strict'
+  'use strict'
   angular
     .module('app')
     .factory('productService',productService)
@@ -12,12 +12,7 @@
   function productService($resource){
     return $resource('/product/:id', { id: '@_id' }, {
       update: {
-        method: 'PUT', // this method issues a PUT request
-        params:{
-          name:'@name',
-          description: '@description',
-          totalPrice:'@totalPrice'
-        }
+        method: 'PUT' // this method issues a PUT request
       }});
 
   }
@@ -26,22 +21,22 @@
   /** @ngInject */
   function totalCalService() {
     this.getTotalNetPrice = function (products) {
-        var output = 0.0;
+      var output = 0.0;
 
-        for (var index = 0; index < products.length;index++) {
-            var product = products[index];
-            output += parseFloat(product.netPrice);
-        }
-        return output;
+      for (var index = 0; index < products.length;index++) {
+        var product = products[index];
+        output += parseFloat(product.netPrice);
+      }
+      return output;
     }
-}
+  }
 
 
   /** @ngInject */
   function queryProductService($resource){
-    return $resource('http://localhost:8080/getProduct/?name=:name',
-        {query:{method:'GET',params:{name:''},isArray:true}
+    return $resource('/getProduct/?name=:name',
+      {query:{method:'GET',params:{name:''},isArray:true}
 
-        });
-}
+      });
+  }
 })();

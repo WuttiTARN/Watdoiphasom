@@ -5,6 +5,7 @@ import java.util.Map;
 /**
  * Created by Family on 19/4/2559.
  */
+
 public class UserTransfer {
     private final  String name;
     private final Map<String,Boolean> roles;

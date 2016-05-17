@@ -10,6 +10,7 @@ import java.io.Serializable;
 /**
  * Created by Family on 19/4/2559.
  */
+
 @Entity
 public class Role implements Serializable {
   private static  final  long serialVersionUID = 1L;

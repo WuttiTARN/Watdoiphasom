@@ -1,10 +1,9 @@
 package camt.se331.shoppingcart.entity;
 
-import org.hibernate.annotations.*;
+import org.hibernate.annotations.Cascade;
 import org.hibernate.annotations.CascadeType;
 
 import javax.persistence.*;
-import javax.persistence.Entity;
 import java.util.Date;
 import java.util.List;
 

@@ -13,6 +13,7 @@ import java.util.Set;
 /**
  * Created by Family on 19/4/2559.
  */
+
 public class SecurityUser extends User implements UserDetails{
     private  static final  long serialVersionUID = 1L;
     public SecurityUser(User user){

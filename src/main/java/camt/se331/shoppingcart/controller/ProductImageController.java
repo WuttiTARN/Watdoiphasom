@@ -11,7 +11,6 @@ import org.springframework.web.multipart.MultipartHttpServletRequest;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.Calendar;
 import java.util.Iterator;
 
 /**
@@ -38,7 +37,7 @@ public class ProductImageController {
                 image.setFileName(multipartFile.getOriginalFilename());
                 image.setContentType(multipartFile.getContentType());
                 image.setContent(multipartFile.getBytes());;
-                image.setCreated(Calendar.getInstance().getTime());
+                image.setCreated("");
                 productService.addImage(product,image);
             }
         }catch (Exception e){
@@ -48,11 +47,12 @@ public class ProductImageController {
 
         return product;
     }
-    @RequestMapping(value = "/remove", method = RequestMethod.DELETE)
+
+    @RequestMapping(value = "remove",method = RequestMethod.DELETE)
     @ResponseBody
-    public Product edit(@RequestParam("productid") Long productId,
-                        @RequestParam("imageid") Long imageid){
-        Product product = productService.getProduct(productId);
+    public Product deleteImage(@RequestParam("imageid")Long imageid, @RequestParam("productid")Long productid){
+        Product product  = productService.getProduct(productid);
         return productService.deleteImage(product,imageid);
     }
+
 }

@@ -13,7 +13,7 @@
     when('/addProduct',{
       templateUrl: 'app/product/editProduct.html',
       controller: 'addProductController',
-      controllerAs: 'addProductController'
+      controllerAs: 'vm'
     }).
     when('/editProduct/:id',{
       templateUrl: 'app/product/editProduct.html',

@@ -5,10 +5,8 @@ import org.imgscalr.Scalr;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
-import java.awt.image.DataBufferByte;
 import java.io.*;
 import java.nio.file.Files;
-import java.util.Calendar;
 
 /**
  * Created by Dto on 4/23/2015.
@@ -44,7 +42,7 @@ public class ImageUtil {
                 bos.write(buf,0,readNum);
             }
             image.setContent(bos.toByteArray());
-            image.setCreated(Calendar.getInstance().getTime());
+            image.setCreated("");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -52,7 +50,7 @@ public class ImageUtil {
 
     }
 
-    public static Image resizeImage(Image image,int width){
+    public static Image resizeImage(Image image, int width){
         // resize image
 
         InputStream imageStream = new ByteArrayInputStream(image.getContent());

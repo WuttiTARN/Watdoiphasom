@@ -15,7 +15,9 @@ public interface ProductService {
     Product deleteProduct(Long id);
     Product updateProduct(Product product);
     List<Product> getProductsByName(String name);
-    Product addImage (Product product,Image image);
+    Product addImage (Product product, Image image);
+
 
     Product deleteImage(Product product, Long imageid);
+
 }

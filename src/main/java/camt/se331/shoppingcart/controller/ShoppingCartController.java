@@ -21,7 +21,7 @@ public class ShoppingCartController {
     }
 
     @RequestMapping(value="/{id}",method = RequestMethod.PUT)
-    public ShoppingCart updateShoppingCart(@PathVariable("id")Long id,@RequestBody ShoppingCart cart, BindingResult bindingResult){
+    public ShoppingCart updateShoppingCart(@PathVariable("id")Long id, @RequestBody ShoppingCart cart, BindingResult bindingResult){
         return shoppingCartService.addShoppingCart(cart);
     }
 }
