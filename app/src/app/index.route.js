@@ -7,8 +7,8 @@
 
   function routeConfig($routeProvider) {
     $routeProvider.
-    when('/main',{
-      templateUrl: 'app/main/main.html'
+    when('/index',{
+      templateUrl: 'app/index/index.html'
     }).
     when('/addProduct',{
       templateUrl: 'app/product/editProduct.html',
@@ -30,7 +30,7 @@
       controller: 'ShoppingCartController',
       controllerAs: 'vm'
     }).
-    otherwise({redirectTo: '/main'});
+    otherwise({redirectTo: '/index'});
 
   }
 

@@ -37,7 +37,7 @@
         }
         UserService.get(function(user){
           $rootScope.user = user;
-          $location.path("/")
+          $location.path()
         },
         function(error){
           if (error.status == "401"){

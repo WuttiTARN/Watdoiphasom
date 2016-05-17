@@ -21,7 +21,7 @@
           var url = config.url;
 
           if (status == 401){
-            $location.path("/main");
+            $location.path("index");
           }else {
             $rootScope.error = method + " on " + url + " failed with status " + status;
           }
