@@ -29,23 +29,22 @@ public class ProductController {
         return productService.getProductsByName(name);
     }
     @RequestMapping(value = "product",method = RequestMethod.POST)
-    public @ResponseBody
-    Product add(@RequestBody Product product, BindingResult bindingResult){
+    public @ResponseBody Product add(@RequestBody Product product, BindingResult bindingResult){
         return productService.addProduct(product);
     }
 
     @RequestMapping(value = "product/{id}",method = RequestMethod.GET)
-    public Product getProduct(@PathVariable("id") Long id){
+    public  Product getProduct(@PathVariable("id") Long id){
         return productService.getProduct(id);
     }
 
     @RequestMapping(value = "product/{id}",method = RequestMethod.PUT)
-    public Product edit(@PathVariable("id") Long id, @RequestBody Product product, BindingResult bindingResult){
+    public  Product edit(@PathVariable("id") Long id,@RequestBody Product product, BindingResult bindingResult){
         return productService.updateProduct(product);
     }
 
     @RequestMapping(value = "product/{id}",method = RequestMethod.DELETE)
-    public Product edit(@PathVariable("id") Long id){
+    public  Product edit(@PathVariable("id") Long id){
         return productService.deleteProduct(id);
     }
 }

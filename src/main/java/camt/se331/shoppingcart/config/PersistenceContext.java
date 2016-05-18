@@ -2,12 +2,13 @@ package camt.se331.shoppingcart.config;
 
 import com.jolbox.bonecp.BoneCPDataSource;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
-import org.springframework.context.annotation.PropertySources;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.*;
 import org.springframework.core.env.Environment;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.jdbc.datasource.embedded.EmbeddedDatabase;
+import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder;
+import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType;
 import org.springframework.orm.hibernate4.HibernateExceptionTranslator;
 import org.springframework.orm.jpa.JpaDialect;
 import org.springframework.orm.jpa.JpaTransactionManager;
@@ -58,26 +59,34 @@ class PersistenceContext {
 
     @Autowired
     private Environment env;
-
     @Bean
-    public BoneCPDataSource boneCPDataSource(){
-        BoneCPDataSource boneCPDataSource = new BoneCPDataSource();
-        boneCPDataSource.setDriverClass(env.getRequiredProperty(PROPERTY_NAME_DB_DRIVER_CLASS));
-        boneCPDataSource.setJdbcUrl(env.getRequiredProperty(PROPERTY_NAME_DB_URL));
-        boneCPDataSource.setUsername(env.getRequiredProperty(PROPERTY_NAME_DB_USER));
-        boneCPDataSource.setPassword(env.getRequiredProperty(PROPERTY_NAME_DB_PASSWORD));
-        boneCPDataSource.setIdleConnectionTestPeriodInMinutes(60);
-        boneCPDataSource.setIdleMaxAgeInMinutes(420);
-        boneCPDataSource.setMaxConnectionsPerPartition(30);
-        boneCPDataSource.setMinConnectionsPerPartition(10);
-        boneCPDataSource.setPartitionCount(3);
-        boneCPDataSource.setAcquireIncrement(5);
-        boneCPDataSource.setStatementsCacheSize(100);
+    public DataSource embedDataSource(){
+        EmbeddedDatabaseBuilder builder = new EmbeddedDatabaseBuilder();
+        EmbeddedDatabase db = builder.setType(EmbeddedDatabaseType.HSQL).setScriptEncoding("UTF-8").build();
 
-
-        return boneCPDataSource;
-
+        return db;
     }
+
+
+
+    // public BoneCPDataSource boneCPDataSource(){
+    //    BoneCPDataSource boneCPDataSource = new BoneCPDataSource();
+    //    boneCPDataSource.setDriverClass(env.getRequiredProperty(PROPERTY_NAME_DB_DRIVER_CLASS));
+    //    boneCPDataSource.setJdbcUrl(env.getRequiredProperty(PROPERTY_NAME_DB_URL));
+    //    boneCPDataSource.setUsername(env.getRequiredProperty(PROPERTY_NAME_DB_USER));
+    //    boneCPDataSource.setPassword(env.getRequiredProperty(PROPERTY_NAME_DB_PASSWORD));
+    //    boneCPDataSource.setIdleConnectionTestPeriodInMinutes(60);
+    //    boneCPDataSource.setIdleMaxAgeInMinutes(420);
+    //    boneCPDataSource.setMaxConnectionsPerPartition(30);
+    //    boneCPDataSource.setMinConnectionsPerPartition(10);
+    //    boneCPDataSource.setPartitionCount(3);
+    //    boneCPDataSource.setAcquireIncrement(5);
+    //    boneCPDataSource.setStatementsCacheSize(100);
+
+
+    //    return boneCPDataSource;
+
+    // }
     @Bean
     @Autowired
     public EntityManagerFactory entityManagerFactory(DataSource dataSource) {

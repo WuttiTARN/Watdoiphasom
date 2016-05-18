@@ -11,11 +11,10 @@ import java.util.Collection;
 import java.util.Set;
 
 /**
- * Created by Family on 19/4/2559.
+ * Created by Dto on 4/19/2015.
  */
-
-public class SecurityUser extends User implements UserDetails{
-    private  static final  long serialVersionUID = 1L;
+public class SecurityUser extends User implements UserDetails {
+    private static final long serialVersionUID = 1L;
     public SecurityUser(User user){
         if (user != null){
             this.setId(user.getId());
@@ -25,13 +24,16 @@ public class SecurityUser extends User implements UserDetails{
             this.setRoles(user.getRoles());
             this.setPassword(user.getPassword());
             this.setUsername(user.getUsername());
+            this.setShoppingCarts(user.getShoppingCarts());
         }
     }
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         Collection<GrantedAuthority> authorities = new ArrayList<>();
         Set<Role> userRoles = this.getRoles();
-        if (userRoles != null){
+
+        if (userRoles != null)
+        {
             for (Role role: userRoles){
                 SimpleGrantedAuthority authority = new SimpleGrantedAuthority(role.getRoleName());
                 authorities.add(authority);
@@ -39,8 +41,9 @@ public class SecurityUser extends User implements UserDetails{
         }
         return authorities;
     }
+
     @Override
-    public String getUsername(){
+    public String getUsername() {
         return super.getUsername();
     }
 
@@ -48,7 +51,6 @@ public class SecurityUser extends User implements UserDetails{
     public String getPassword(){
         return super.getPassword();
     }
-
     @Override
     public boolean isAccountNonExpired() {
         return true;

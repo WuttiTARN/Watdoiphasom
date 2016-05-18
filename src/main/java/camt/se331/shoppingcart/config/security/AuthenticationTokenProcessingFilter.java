@@ -1,6 +1,5 @@
 package camt.se331.shoppingcart.config.security;
 
-
 import camt.se331.shoppingcart.service.util.TokenUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -19,9 +18,8 @@ import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 
 /**
- * Created by Family on 19/4/2559.
+ * Created by Dto on 4/18/2015.
  */
-
 @Component
 public class AuthenticationTokenProcessingFilter extends GenericFilterBean {
     @Autowired

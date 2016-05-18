@@ -3,6 +3,7 @@ package camt.se331.shoppingcart.dao;
 import camt.se331.shoppingcart.entity.Product;
 import camt.se331.shoppingcart.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -12,7 +13,7 @@ import java.util.List;
  */
 
 @Repository
-public class DbProductDao implements ProductDao {
+public class DbProductDao implements ProductDao{
     @Autowired
     ProductRepository productRepository;
     @Override

@@ -1,9 +1,7 @@
 package camt.se331.shoppingcart.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Lob;
+import javax.persistence.*;
+import java.util.Date;
 
 /**
  * Created by Dto on 3/29/2016.
@@ -19,8 +17,8 @@ public class Image {
     byte[] content;
     String contentType;
 
-
-    String created;
+    @Temporal(TemporalType.TIMESTAMP)
+    Date created;
 
     public Image() {
     }
@@ -57,15 +55,15 @@ public class Image {
         this.contentType = contentType;
     }
 
-    public String getCreated() {
+    public Date getCreated() {
         return created;
     }
 
-    public void setCreated(String create) {
+    public void setCreated(Date create) {
         this.created = create;
     }
 
-    public Image(String fileName, byte[] content, String contentType, String created) {
+    public Image(String fileName, byte[] content, String contentType, Date created) {
 
         this.fileName = fileName;
         this.content = content;

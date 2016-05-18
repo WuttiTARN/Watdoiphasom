@@ -1,8 +1,9 @@
 package camt.se331.shoppingcart.entity;
 
-import org.hibernate.annotations.Cascade;
+import org.hibernate.annotations.*;
 
 import javax.persistence.*;
+import javax.persistence.Entity;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -53,7 +54,7 @@ public class Product implements Comparable{
     };
 
     public Double getNetPrice(){
-        return getTotalPrice()*(1- VatEntity.getInstance().getVat());
+        return getTotalPrice()*(1-VatEntity.getInstance().getVat());
     }
 
     public Double getTax(){

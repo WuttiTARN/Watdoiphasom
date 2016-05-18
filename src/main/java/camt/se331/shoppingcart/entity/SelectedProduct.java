@@ -1,9 +1,6 @@
 package camt.se331.shoppingcart.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.OneToOne;
+import javax.persistence.*;
 
 /**
  * Created by Dto on 2/7/2015.

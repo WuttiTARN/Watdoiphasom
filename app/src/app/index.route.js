@@ -7,9 +7,6 @@
 
   function routeConfig($routeProvider) {
     $routeProvider.
-    when('/main',{
-      templateUrl: 'app/main/main.html'
-    }).
     when('/addProduct',{
       templateUrl: 'app/product/editProduct.html',
       controller: 'addProductController',
@@ -27,10 +24,16 @@
     }).
     when('/shoppingCart/:id',{
       templateUrl: 'app/shoppingcart/shoppingCart.html',
-      controller: 'ShoppingCartController',
+      controller: 'showShoppingCartController',
       controllerAs: 'vm'
     }).
-    otherwise({redirectTo: '/main'});
+    when('/shoppingCart',{
+      templateUrl: 'app/shoppingcart/shoppingCart.html',
+      controller: 'shoppingCartController',
+      controllerAs: 'vm'
+
+    }).
+    otherwise({redirectTo: '/listProduct'});
 
   }
 

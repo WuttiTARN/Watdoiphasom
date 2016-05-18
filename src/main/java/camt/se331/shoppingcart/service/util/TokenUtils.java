@@ -7,9 +7,8 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 /**
- * Created by Family on 19/4/2559.
+ * Created by Dto on 4/20/2015.
  */
-
 public class TokenUtils {
 
     public static final String MAGIC_KEY = "obfuscate";
