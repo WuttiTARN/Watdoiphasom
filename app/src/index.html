@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>app</title>
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
   <!-- build:css({.tmp/serve,src}) styles/vendor.css -->
@@ -103,17 +103,13 @@
 <div class="container-fluid">
   <div class="row">
 
-    <!-- Fixed left nav column
-       <div class="col-md-2">
-  column
-         <div ng-include src="'app/component/leftnav.html'"></div>
-       </div> -->
-      <!-- Breadcrumbs
-     ================================================== -->
+      <div class="col-md-12">
+        <!-- Breadcrumbs
+    ================================================== -->
 
 
       <ng-view>Loading...</ng-view>
-
+      </div>
 
  </div>
 </div>

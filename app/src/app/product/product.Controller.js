@@ -43,7 +43,7 @@
     }).$promise;
 
 
-    $scope.$on('$locationChangeStart', function () {
+    $scope.$on('$locationChangeStart', function (event) {
       $rootScope.addSuccess = false;
       $rootScope.editSuccess = false;
       $rootScope.deleteSuccess = false;
