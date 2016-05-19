@@ -29,8 +29,11 @@ public class ProductServiceImpl implements ProductService {
         return productDao.getProducts();
     }
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 9a2d5077c44f970032b0f7b7bfbacad619139127
     @Override
     public Product getProduct(Long id) {
         return productDao.getProduct(id);
@@ -62,6 +65,18 @@ public class ProductServiceImpl implements ProductService {
     public Product addImage(Product product, Image image) {
         image=ImageUtil.resizeImage(image,200);
         product.getImages().add(image);
+        productDao.updateProduct(product);
+        return product;
+    }
+
+    @Override
+    public Product deleteImage(Product product, Long imageid) {
+        Set<Image> images = product.getImages();
+        for (Iterator<Image> it = images.iterator(); it.hasNext(); ) {
+            Image f = it.next();
+            if (f.getId().equals(imageid)){
+                product.getImages().remove(f);}
+        }
         productDao.updateProduct(product);
         return product;
     }

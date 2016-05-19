@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 <div class="sidebar-nav">
     <ul class="nav nav-list">
@@ -8,5 +9,17 @@
     	<li ng-class="{true: 'active'}[menuActive('/listProduct')]">
         	<a href="#/listProduct">All products</a>
     	</li>
+=======
+<div class="sidebar-nav">
+    <ul class="nav nav-list">
+    	<li ng-class="{true: 'active' }  [menuActive('/addProduct')]" ng-show="hasRole('admin')">
+        	<a href="#/addProduct">Add Product</a>
+    	</li>
+      <!--
+    	<li ng-class="{true: 'active'}[menuActive('/listProduct')]">
+        	<a href="#/listProduct">All products</a>
+    	</li>
+      -->
+>>>>>>> 9a2d5077c44f970032b0f7b7bfbacad619139127
     </ul>
 </div><!--/.well -->

@@ -7,6 +7,7 @@
 
 
   /** @ngInject */
+<<<<<<< HEAD
   function ShoppingCartController(shoppingCartService,cartManagement,$scope, $rootScope, $routeParams,$log ) {
     var vm = this;
 
@@ -19,18 +20,36 @@
       })
     }
     $scope.$on('$locationChangeStart', function () {
+=======
+  function ShoppingCartController(shoppingCartService, $location, $rootScope, $rootParams) {
+    var vm = this;
+    var id = $rootParams.id;
+    shoppingCartService.get({id: id}, function (data) {
+      vm.cart = data;
+    })
+
+    vm.$on('$locationChangeStart', function () {
+>>>>>>> 9a2d5077c44f970032b0f7b7bfbacad619139127
       $rootScope.cartUpdateSuccess = false;
 
     });
 
     vm.updateCart = function () {
+<<<<<<< HEAD
         $rootScope.cartUpdateSuccess = true;
+=======
+      shoppingCartService.update({id: id}, vm.cart, function () {
+        $rootScope.cartUpdateSuccess = true;
+
+      });
+>>>>>>> 9a2d5077c44f970032b0f7b7bfbacad619139127
     }
 
     vm.totalEach = function (index) {
       return vm.cart.selectedProducts[index].product.totalPrice * vm.cart.selectedProducts[index].amount;
     }
 
+<<<<<<< HEAD
     vm.saveCart = function (cart){
       cart.user = {};
       cart.user.username = $rootScope.user.name;
@@ -42,6 +61,8 @@
     }
 
 
+=======
+>>>>>>> 9a2d5077c44f970032b0f7b7bfbacad619139127
     vm.total = function () {
       var total = 0;
       angular.forEach(vm.cart.selectedProducts, function (item) {
@@ -50,9 +71,12 @@
 
       return total;
     }
+<<<<<<< HEAD
 
     vm.removeProduct = function(index){
       $rootScope.shoppingCart.selectedProducts.splice(index, 1);
     }
+=======
+>>>>>>> 9a2d5077c44f970032b0f7b7bfbacad619139127
   }
 })();

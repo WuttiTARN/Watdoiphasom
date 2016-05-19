@@ -7,6 +7,12 @@
 
   function routeConfig($routeProvider) {
     $routeProvider.
+<<<<<<< HEAD
+=======
+    when('/index',{
+      templateUrl: 'app/index/index.html'
+    }).
+>>>>>>> 9a2d5077c44f970032b0f7b7bfbacad619139127
     when('/addProduct',{
       templateUrl: 'app/product/editProduct.html',
       controller: 'addProductController',
@@ -27,6 +33,7 @@
       controller: 'showShoppingCartController',
       controllerAs: 'vm'
     }).
+<<<<<<< HEAD
     when('/shoppingCart',{
       templateUrl: 'app/shoppingcart/shoppingCart.html',
       controller: 'shoppingCartController',
@@ -34,6 +41,9 @@
 
     }).
     otherwise({redirectTo: '/listProduct'});
+=======
+    otherwise({redirectTo: '/index'});
+>>>>>>> 9a2d5077c44f970032b0f7b7bfbacad619139127
 
   }
 

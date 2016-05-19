@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="alert alert-success alert-dismissible" role="alert" ng-show="addSuccess">
   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span></button>
@@ -81,3 +82,89 @@
     </table>
   </div>
 </div>
+=======
+    <div class="alert alert-success alert-dismissible" role="alert" ng-show="addSuccess">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span></button>
+      <strong>Success!</strong> Success adding a new product
+    </div>
+    <div class="alert alert-success alert-dismissible" role="alert" ng-show="editSuccess">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span></button>
+      <strong>Success!</strong> Success edit the product
+    </div>
+    <div class="alert alert-success alert-dismissible" role="alert" ng-show="deleteSucess">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span></button>
+      <strong>Success!</strong> Success delete the product
+    </div>
+  <div cg-busy="{promise:vm.queryPromise,message:'Loading',backdrop:true,minDuration:1000}">
+
+
+
+      <!-- Fixed left nav column -->
+       <div class="col-md-2">
+         <div ng-include src="'app/component/leftnav.html'"></div>
+       </div>
+
+  <div class="col-md-12">
+      <!-- Table -->
+      <table class="table table-hover">
+
+          <tr ng-repeat="product in vm.products">
+          <td>
+            <div class="col-sm-4">
+              <div class="panel animated pulse animDelay1">
+                <div class="panel-heading">
+
+                  <p class="text-center" ng-show="hasRole('admin')">
+                    <a ng-href="#/listProduct">
+                      <span class="glyphicon glyphicon-remove-circle" aria-hidden="true" ng-click="deleteProduct(product.id)"></span></a>
+                  </p>
+
+                  <h3 class="mg-clear text-center ">
+                    {{product.name}}
+                  </h3>
+
+                <div class="panel-body">
+
+                  <p>
+                  <div ng-repeat="image in product.images" class="text-center" class="thumbnail">
+                    <img ng-src="data:{{image.contentType}};base64,{{image.content}}">
+                  </div>
+                  </p>
+
+                  <p>
+                    {{product.netPrice | number}}
+                  </p>
+                  <p ng-show="hasRole('admin')">
+                    {{product.totalPrice | number}}
+                  </p>
+
+                  <p>
+                    {{product.description}}
+                  </p>
+
+                  <p class="text-center" ng-show="hasRole('admin')">
+                    <a ng-href="#/editProduct/{{product.id}}">
+                    <span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                  </p>
+
+                  <div class="divider-h">
+                    <span class="divider"></span>
+                  </div>
+
+                  <a href="index.html" class="btn  btn-d btn-sq btn-block">Buy now</a>
+
+                </div>
+              </div>
+              </div>
+            </div>
+          </td>
+          </tr>
+      </table>
+  </div>
+
+
+  </div>
+>>>>>>> 9a2d5077c44f970032b0f7b7bfbacad619139127
