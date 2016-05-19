@@ -11,20 +11,9 @@
   /** @ngInject */
   function productService($resource){
     return $resource('/product/:id', { id: '@_id' }, {
-<<<<<<< HEAD
         update: {
             method: 'PUT' // this method issues a PUT request
         }});
-=======
-      update: {
-        method: 'PUT', // this method issues a PUT request
-        params:{
-          name:'@name',
-          description: '@description',
-          totalPrice:'@totalPrice'
-        }
-      }});
->>>>>>> 9a2d5077c44f970032b0f7b7bfbacad619139127
 
   }
 

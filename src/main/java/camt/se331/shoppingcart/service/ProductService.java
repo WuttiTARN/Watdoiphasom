@@ -15,11 +15,6 @@ public interface ProductService {
     Product deleteProduct(Long id);
     Product updateProduct(Product product);
     List<Product> getProductsByName(String name);
-<<<<<<< HEAD
     Product addImage (Product product,Image image);
-=======
-    Product addImage (Product product, Image image);
     Product deleteImage(Product product, Long imageid);
-
->>>>>>> 9a2d5077c44f970032b0f7b7bfbacad619139127
 }

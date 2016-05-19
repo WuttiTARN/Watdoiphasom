@@ -1,21 +1,15 @@
-<<<<<<< HEAD
 <div class="row-fluid">
     <div class="row" ng-show="vm.addProduct">
         <h1>Add new product</h1>
-=======
-<div class="row-fluid col-md-10 col-md-offset-1">
-  <div class="row" ng-show="vm.addPerson">
-    <h1>Add new product</h1>
-  </div>
-  <div class="row" ng-show="vm.editPerson">
-    <h1>Edit Product</h1>
-    <div ng-repeat="image in vm.product.images" class="text-center" class="thumbnail" >
-      <img ng-src="data:{{image.contentType}};base64,{{image.content}}">
-      <a ng-href="#/editProduct/{{vm.product.id}}"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true" ng-click="vm.deleteImage(image.id)"></span></a>
->>>>>>> 9a2d5077c44f970032b0f7b7bfbacad619139127
     </div>
     <div class="row" ng-show="vm.editProduct">
         <h1>Edit Product</h1>
+      <div ng-repeat="image in vm.product.images" class="text-center" class="thumbnail" >
+        <img ng-src="data:{{image.contentType}};base64,{{image.content}}">
+        <a ng-href="#/editProduct/{{vm.product.id}}">
+          <span class="glyphicon glyphicon-remove-circle" aria-hidden="true" ng-click="vm.deleteImage(image.id)"></span>
+        </a>
+      </div>
     </div>
     <div class="col-md-4">
         <form name="editform" novalidate flow-init  flow-complete="vm.redirectToHome()" >
@@ -71,7 +65,7 @@
             </div>
 
             <button type="submit" class="btn btn-default" ng-click="vm.addProduct($flow)" ng-show="vm.addProduct">Add</button>
-            <button type="submit" class="btn btn-default" ng-click="vm.editProduct()" ng-show="vm.editProduct">Edit</button>
+            <button type="submit" class="btn btn-default" ng-click="vm.editProduct($flow)" ng-show="vm.editProduct">Edit</button>
         </form>
     </div>
 </div>

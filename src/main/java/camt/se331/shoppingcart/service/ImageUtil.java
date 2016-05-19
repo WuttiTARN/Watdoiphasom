@@ -38,7 +38,7 @@ public class ImageUtil {
                 bos.write(buf,0,readNum);
             }
             image.setContent(bos.toByteArray());
-            image.setCreated(Calendar.getInstance().getTime());
+            image.setCreated("");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -54,7 +54,7 @@ public class ImageUtil {
             // change the image byte array to Buffer Image
             BufferedImage bufferedImage = ImageIO.read(imageStream);
             //Scale the image using the default api
-            BufferedImage scaledImage = Scalr.resize(bufferedImage,100);
+            BufferedImage scaledImage = Scalr.resize(bufferedImage,400);
 
             //Convert BufferedImage to byte
             // convert BufferedImage to byte array

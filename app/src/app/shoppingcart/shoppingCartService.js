@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 (function () {
   'use strict'
   angular
@@ -29,21 +28,4 @@
       }
     })
   }
-=======
-(function() {
-'use strict'
-  angular
-    .module('app')
-    .factory('shoppingCartService',shoppingCartService);
-
-  /** @ngInject */
-
-  function shoppingCartService($resource){
-    return $resource('/shoppingcart/:id', { id: '@_id' }, {
-        update: {
-            method: 'PUT' // this method issues a PUT request
-        }});
-
-}
->>>>>>> 9a2d5077c44f970032b0f7b7bfbacad619139127
 })();

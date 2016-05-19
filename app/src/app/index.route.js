@@ -1,18 +1,20 @@
 (function() {
   'use strict';
-
   angular
     .module('app')
     .config(routeConfig);
-
   function routeConfig($routeProvider) {
     $routeProvider.
-<<<<<<< HEAD
-=======
-    when('/index',{
-      templateUrl: 'app/index/index.html'
+    when('/home',{
+      templateUrl: 'app/home/home.html'
     }).
->>>>>>> 9a2d5077c44f970032b0f7b7bfbacad619139127
+
+    when('/register',{
+      templateUrl: 'app/user/registration.html',
+      controller: 'registerController',
+      controllerAs: 'vm'
+    }).
+
     when('/addProduct',{
       templateUrl: 'app/product/editProduct.html',
       controller: 'addProductController',
@@ -23,6 +25,13 @@
       controller: 'editProductController',
       controllerAs: 'vm'
     }).
+
+    when('/editReview/:id',{
+      templateUrl: 'app/product/editReview.html',
+      controller: 'editProductController',
+      controllerAs: 'vm'
+    }).
+
     when('/listProduct',{
       templateUrl: 'app/product/productList.html',
       controller: 'listProductController',
@@ -33,18 +42,11 @@
       controller: 'showShoppingCartController',
       controllerAs: 'vm'
     }).
-<<<<<<< HEAD
     when('/shoppingCart',{
       templateUrl: 'app/shoppingcart/shoppingCart.html',
       controller: 'shoppingCartController',
       controllerAs: 'vm'
-
     }).
-    otherwise({redirectTo: '/listProduct'});
-=======
-    otherwise({redirectTo: '/index'});
->>>>>>> 9a2d5077c44f970032b0f7b7bfbacad619139127
-
+    otherwise({redirectTo: '/home'});
   }
-
 })();

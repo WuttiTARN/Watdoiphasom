@@ -50,7 +50,7 @@
     }).$promise;
 
 
-    $scope.$on('$locationChangeStart', function (event) {
+    $scope.$on('$locationChangeStart', function () {
       $rootScope.addSuccess = false;
       $rootScope.editSuccess = false;
       $rootScope.deleteSuccess = false;
@@ -103,12 +103,26 @@
     )
 
 
-    vm.editProduct = function () {
+    vm.editProduct = function (flowFiles) {
       //$http.put("/product", $scope.product).then(function () {
       productService.update({id: vm.product.id}, vm.product, function () {
+        var productid = vm.product.id;
+        // set location
+        flowFiles.opts.target = 'http://localhost:8080/productImage/add';
+        flowFiles.opts.testChunks = false;
+        flowFiles.opts.query = {productid: productid};
+        flowFiles.upload();
         $rootScope.editSuccess = true;
         $location.path("listProduct");
+
       });
+
     }
+
+    vm.deleteImage = function (id) {
+      var answer = confirm("Do you want to delete the image?");
+      if (answer) { $http.delete("http://localhost:8080/productImage/remove?imageid=" + id +
+        "&productid=" + vm.product.id).success(function (data) { vm.product = data; }); } }
+
   }
 })();

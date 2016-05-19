@@ -29,16 +29,17 @@ public class DatabaseInitializationBean implements InitializingBean {
     @Override
     public void afterPropertiesSet() throws Exception {
         Product[] initProduct = {
-                new Product(1l, "Kindle", "the good book reader", 6900.00, ImageUtil.resizeImage(ImageUtil.getImage("pic/x.png"), 200)),
-                new Product(2l, "Surface Pro", "The unknow computer", 34000.00, ImageUtil.getImage("pic/x.png")),
-                new Product(3l, "Mac pro", " Mac book interim", 44000.00, ImageUtil.getImage("pic/x.png")),
-                new Product(4l, "Candle", "use for lightenup the world", 10.00, ImageUtil.getImage("pic/x.png")),
-                new Product(5l, "Bin", "User for what ?", 200.00, ImageUtil.getImage("pic/x.png")),
-                new Product(6l, "Telephone", "Call the others", 150.00, ImageUtil.getImage("pic/x.png")),
-                new Product(7l, "iPhone", "What is it?", 26000.00, ImageUtil.getImage("pic/x.png")),
-                new Product(8l, "Galaxy Note 4", "Who still use this ?", 24000.00, ImageUtil.getImage("pic/x.png")),
-                new Product(9l, "AngularJS", "we hate it", 2000.00, ImageUtil.getImage("pic/x.png")),
-                new Product(10l, "Mazda 3", "Very handsome guy use this", 300000.00, ImageUtil.getImage("pic/x.png"))
+                new Product(1l, "Brown rice", "XXXXXXXXXXXXXXXX","", 6900.00, ImageUtil.resizeImage(ImageUtil.getImage("pic/x1.png"), 500)),
+                new Product(2l, "GABA rice", "XXXXXXXXXXXXXXXX","", 34000.00, ImageUtil.resizeImage(ImageUtil.getImage("pic/x2.png"), 200)),
+                new Product(3l, "White rice", "XXXXXXXXXXXXXXXX","", 44000.00, ImageUtil.resizeImage(ImageUtil.getImage("pic/x3.png"), 200)),
+                new Product(4l, "Stevia tea", "XXXXXXXXXXXXXXXX","", 10.00, ImageUtil.resizeImage(ImageUtil.getImage("pic/x4.png"), 200)),
+                new Product(5l, "White chrysanthemum tea", "XXXXXXXXXXXXXXXX","", 200.00, ImageUtil.resizeImage(ImageUtil.getImage("pic/x5.png"), 200)),
+                new Product(6l, "Red banana ship", "XXXXXXXXXXXXXXXX","", 150.00, ImageUtil.resizeImage(ImageUtil.getImage("pic/x6.png"), 200)),
+                new Product(7l, "Yellow banana ship", "XXXXXXXXXXXXXXXX","", 26000.00, ImageUtil.resizeImage(ImageUtil.getImage("pic/x7.png"), 200)),
+                new Product(8l, "Hugpa coffee", "XXXXXXXXXXXXXXXX","", 24000.00, ImageUtil.resizeImage(ImageUtil.getImage("pic/x8.png"), 200)),
+                new Product(9l, "Haai-Sap Haai-Soy", "XXXXXXXXXXXXXXXX","", 2000.00, ImageUtil.resizeImage(ImageUtil.getImage("pic/x9.png"), 200)),
+                new Product(10l, "Champoo", "XXXXXXXXXXXXXXXX","", 300000.00, ImageUtil.resizeImage(ImageUtil.getImage("pic/x10.png"), 200)),
+
         };
         productRepository.save(Arrays.asList(initProduct));
 
@@ -46,9 +47,9 @@ public class DatabaseInitializationBean implements InitializingBean {
         ShoppingCart shoppingCart = new ShoppingCart();
         List<SelectedProduct> selectedProducts = new ArrayList<>();
         SelectedProduct[] initSelectedProduct = {
-                new SelectedProduct(initProduct[2], 5),
-                new SelectedProduct(initProduct[4], 2),
-                new SelectedProduct(initProduct[1], 1),
+                //new SelectedProduct(initProduct[2], 5),
+                //new SelectedProduct(initProduct[4], 2),
+                //new SelectedProduct(initProduct[1], 1),
         };
         selectedProducts.addAll(Arrays.asList(initSelectedProduct));
         Calendar calendar = new GregorianCalendar(2015, 4, 7);
@@ -59,75 +60,42 @@ public class DatabaseInitializationBean implements InitializingBean {
 
         // add user
         Role adminRole = new Role("admin");
-        Role userRole = new Role("user");
-        Role userRole2 = new Role("user");
+        Role retailsRole = new Role("retails");
+        Role wholesaleRole = new Role("wholesale");
 
 
         User admin = new User();
         admin.setName("admin");
         admin.setUsername("admin");
-        admin.setEmail("admin@yahoo.com");
-        admin.setPassword("123456");
+        admin.setEmail("admin@gmail.com");
+        admin.setPassword("88888888");
         Set<Role> roles = new HashSet<>();
         roles.add(adminRole);
         admin.setRoles(roles);
 
-        User user = new User();
-        user.setName("user");
-        user.setUsername("user");
-        user.setEmail("user@yahoo.com");
-        user.setPassword("123456");
+        User retails = new User();
+        retails.setName("retails");
+        retails.setUsername("retails");
+        retails.setEmail("retails@gmail.com");
+        retails.setPassword("88888888");
         Set<Role> roles2 = new HashSet<>();
-        roles2.add(userRole);
-        user.setRoles(roles2);
+        roles2.add(retailsRole);
+        retails.setRoles(roles2);
 
-        User user2 = new User();
-        user2.setName("user2");
-        user2.setUsername("user2");
-        user2.setEmail("user@yahoo.com");
-        user2.setPassword("123456");
+        User wholesale = new User();
+        wholesale.setName("wholesale");
+        wholesale.setUsername("wholesale");
+        wholesale.setEmail("wholesale@gmail.com");
+        wholesale.setPassword("88888888");
         Set<Role> roles3 = new HashSet<>();
-        roles3.add(userRole2);
-        user2.setRoles(roles3);
+        roles3.add(wholesaleRole);
+        wholesale.setRoles(roles3);
+
         userRepository.save(admin);
-        userRepository.save(user);
-        userRepository.save(user2);
+        userRepository.save(retails);
+        userRepository.save(wholesale);
         admin.setRoles(roles);
-        user.setRoles(roles2);
-<<<<<<< HEAD
-        user2.setRoles(roles3);
-=======
-        foreignUser.setRoles(roles3);
-
-
-        Product[] initProduct =  {
-                new Product(1l,"Kindle","the good book reader",6900.00, ImageUtil.resizeImage(ImageUtil.getImage("pic/1.jpg"),200)),
-                new Product(2l,"Surface Pro","The unknow computer",34000.00,ImageUtil.resizeImage(ImageUtil.getImage("pic/2.jpg"),200)),
-                new Product(3l,"Mac pro"," Mac book interim",44000.00,ImageUtil.resizeImage(ImageUtil.getImage("pic/3.jpg"),200)),
-                new Product(4l,"Candle","use for lightenup the world",10.00,ImageUtil.resizeImage(ImageUtil.getImage("pic/4.jpg"),200)),
-                new Product(5l,"Bin","User for what ?",200.00,ImageUtil.resizeImage(ImageUtil.getImage("pic/5.jpg"),200)),
-                new Product(6l,"Telephone", "Call the others",150.00,ImageUtil.resizeImage(ImageUtil.getImage("pic/6.jpg"),200)),
-                new Product(7l,"iPhone","What is it?",26000.00,ImageUtil.resizeImage(ImageUtil.getImage("pic/7.jpg"),200)),
-                new Product(8l,"Galaxy Note 4","Who still use this ?",24000.00,ImageUtil.resizeImage(ImageUtil.getImage("pic/8.jpg"),200)),
-                new Product(9l,"AngularJS","we hate it",2000.00,ImageUtil.resizeImage(ImageUtil.getImage("pic/9.jpg"),200)),
-                new Product(10l,"Mazda 3","Very handsome guy use this",300000.00,ImageUtil.resizeImage(ImageUtil.getImage("pic/10.jpg"),200))
-        };
-        productRepository.save(Arrays.asList(initProduct));
-
-
-        ShoppingCart shoppingCart = new ShoppingCart();
-        List<SelectedProduct> selectedProducts = new ArrayList<>();
-        SelectedProduct[] initSelectedProduct = {
-                new SelectedProduct(initProduct[2], 5),
-                new SelectedProduct(initProduct[4], 2),
-                new SelectedProduct(initProduct[1], 1),
-        };
-        selectedProducts.addAll(Arrays.asList(initSelectedProduct));
-        Calendar calendar = new GregorianCalendar(2015,4,7);
-        shoppingCart.setSelectedProducts(selectedProducts);
-        shoppingCart.setPurchaseDate(calendar.getTime());
-        shoppingCart.setId(1L);
-        shoppingCartRepository.save(shoppingCart);
->>>>>>> 9a2d5077c44f970032b0f7b7bfbacad619139127
+        retails.setRoles(roles2);
+        wholesale.setRoles(roles3);
     }
 }

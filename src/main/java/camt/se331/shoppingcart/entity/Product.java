@@ -17,16 +17,18 @@ public class Product implements Comparable{
     Long id;
     String name;
     String description;
+    String review;
     Double totalPrice;
 
     @OneToMany(fetch = FetchType.EAGER)
     @Cascade(org.hibernate.annotations.CascadeType.ALL)
     Set<Image> images = new HashSet<>();
 
-    public Product(Long id,String name, String description, Double totalPrice, Image image) {
+    public Product(Long id,String name, String description, String review, Double totalPrice, Image image) {
         this.id = id;
         this.name = name;
         this.description = description;
+        this.review = review;
         this.totalPrice = totalPrice;
         this.images.add(image) ;
     }
@@ -67,6 +69,7 @@ public class Product implements Comparable{
 
         Product product = (Product) o;
 
+        if (review != null ? !review.equals(product.review) : product.review != null) return false;
         if (description != null ? !description.equals(product.description) : product.description != null) return false;
         if (id != null ? !id.equals(product.id) : product.id != null) return false;
         if (name != null ? !name.equals(product.name) : product.name != null) return false;
@@ -84,9 +87,10 @@ public class Product implements Comparable{
         return result;
     }
 
-    public Product(Long id,String name, String description, Double price) {
+    public Product(Long id,String name, String description, String review, Double price) {
         this.name = name;
         this.description = description;
+        this.review = review;
         this.totalPrice = price;
         this.id = id;
     }
@@ -105,6 +109,15 @@ public class Product implements Comparable{
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+
+    public String getReview() {
+        return review;
+    }
+
+    public void setReview(String review) {
+        this.review = review;
     }
 
     public Double getTotalPrice() {

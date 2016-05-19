@@ -24,6 +24,7 @@ public class ProductImageController {
     @Autowired
     ProductService productService;
     @RequestMapping(value = "/add",method = RequestMethod.POST)
+
     @ResponseBody
     public Product addImage(HttpServletRequest request,
                             HttpServletResponse response, @RequestParam("productid")Long productId){
@@ -38,7 +39,7 @@ public class ProductImageController {
                 image.setFileName(multipartFile.getOriginalFilename());
                 image.setContentType(multipartFile.getContentType());
                 image.setContent(multipartFile.getBytes());;
-                image.setCreated(Calendar.getInstance().getTime());
+                image.setCreated("");
                 productService.addImage(product,image);
             }
         }catch (Exception e){
@@ -48,4 +49,11 @@ public class ProductImageController {
 
         return product;
     }
+
+    @RequestMapping(value = "remove",method = RequestMethod.DELETE)
+    @ResponseBody public Product deleteImage(@RequestParam("imageid")Long
+    imageid,@RequestParam("productid")Long productid){
+    Product product = productService.getProduct(productid);
+    return productService.deleteImage(product,imageid); }
+
 }
